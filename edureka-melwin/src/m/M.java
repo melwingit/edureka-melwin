@@ -16,16 +16,16 @@ public class M {
         ChromeOptions chromeoptions = new ChromeOptions();
         chromeoptions.addArguments("--headless");
         WebDriver driver=new ChromeDriver();  
-    	driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("http://34.68.74.197:8080/");  
-        driver.findElement(By.id("About Us")).click();
+        driver.findElement(By.xpath("//a[@id='About Us']")).click();
         if(text2.equals(driver.findElement(By.xpath("/html[1]/body[1]/p[2]")).getText())&& text1.equals(driver.findElement(By.id("PID-ab2-pg")).getText()))
         {
-            System.out.println("TEST PASSED");
+            System.out.println("\n----------\n\nTEST PASSED\n\n----------\n");
 
         }else
         {
-            System.out.println("TEST FAILED");
+            System.out.println("\n----------\n\nTEST FAILED\n\n----------\n");
 
         }
         
