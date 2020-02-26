@@ -17,7 +17,7 @@ public class M {
         chromeoptions.addArguments("--headless");
         WebDriver driver=new ChromeDriver();  
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.get("http://34.68.74.197:8080/");  
+        driver.get("http://10.160.0.7:8080");  
         driver.findElement(By.xpath("//a[@id='About Us']")).click();
         if(text2.equals(driver.findElement(By.xpath("/html[1]/body[1]/p[2]")).getText())&& text1.equals(driver.findElement(By.id("PID-ab2-pg")).getText()))
         {
