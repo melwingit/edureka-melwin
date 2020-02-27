@@ -15,7 +15,7 @@ public class M {
         System.setProperty("webdriver.chrome.driver", "/bin/chromedriver");  
         ChromeOptions chromeoptions = new ChromeOptions();
         chromeoptions.addArguments("--headless");
-        /*chromeoptions.addArguments("--no-sandbox");*/
+        chromeoptions.addArguments("--no-sandbox");
         chromeoptions.addArguments("--disable-dev-shm-usage");
         WebDriver driver=new ChromeDriver();  
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
