@@ -21,7 +21,7 @@ public class M {
         chromeoptions.addArguments("--no-sandbox");
         chromeoptions.addArguments("--disable-dev-shm-usage");
         WebDriver driver=new ChromeDriver();  */
-        System.setProperty("webdriver.gecko.driver","C:\\Users\\melwinvinod\\git\\edureka-melwin\\edureka-melwin\\geckodriver.exe");
+        System.setProperty("webdriver.gecko.driver","/bin/geckodriver");
         FirefoxOptions options = new FirefoxOptions();
 		options.setHeadless(true);
         WebDriver driver=new FirefoxDriver(options);
